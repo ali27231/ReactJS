@@ -1,0 +1,125 @@
+/* استایل کلی صفحه */
+.shift-form-container {
+    max-width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* استایل فرم */
+.form-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff7b00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff5000;
+}
+
+/* استایل جدول */
+.table-title {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+    overflow-y: auto; 
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    max-width: 100%; /* جلوگیری از بیرون‌زدگی جدول */
+    border-collapse: collapse;
+    table-layout: fixed; /* توزیع مساوی ستون‌ها */    
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    background-color: #004d99;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    width: 50px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* استایل ورودی‌های داخل جدول */
+input.availability-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    background: transparent;
+    font-weight: bold;
+}
+
+/* اسکرول زیباتر */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}

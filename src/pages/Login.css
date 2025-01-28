@@ -1,0 +1,83 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+body {
+    font-family: 'Vazirmatn', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* عرض ثابت برای کادر */
+    max-width: 100%; /* اطمینان از عدم بزرگ شدن کادر */
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    box-sizing: border-box; /* شامل padding در عرض کلی */
+  }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333, !important;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+  
+  .input-container i {
+    position: absolute;
+    left: 10px; /* موقعیت آیکون از سمت چپ */
+    top: 50%; /* مرکز آیکون از بالا */
+    transform: translateY(-50%); /* تنظیم موقعیت عمودی آیکون */
+    color: #aaa;
+  }
+  
+  input {
+    width: 100%; /* عرض کامل ورودی */
+    padding: 12px 30px; /* اضافه کردن padding برای ورودی */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* شامل padding و border در عرض ورودی */
+  }
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
