@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Login.css';
+import './Login.css'; // فایل CSS صفحه لاگین
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from 'axios'; // افزودن axios
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -11,24 +11,25 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    
+
+    const loginData = {
+      username,
+      password,
+    };
+
     try {
-      // ارسال درخواست به Django API برای لاگین
-      const response = await axios.post('http://your-api-url.com/api/login/', {
-        username: username,
-        password: password
-      });
-      
-      if (response.data.token) {
-        // فرض می‌کنیم که در صورت موفقیت، یک توکن دریافت می‌کنید
-        localStorage.setItem('authToken', response.data.token);
+      // ارسال درخواست به API Django
+      const response = await axios.post('https://djangoapi.liara.run/api/posts/', loginData);
+
+      // اگر لاگین موفقیت‌آمیز بود، ریدایرکت به صفحه شِیفت‌ها
+      if (response.status === 200) {
         setError('');
         navigate('/shifts');
-      } else {
-        setError('نام کاربری یا رمز عبور نادرست است.');
       }
-    } catch (error) {
-      setError('خطا در ارتباط با سرور.');
+    } catch (err) {
+      // در صورت بروز خطا (مثل اطلاعات نادرست)
+      setError('نام کاربری یا رمز عبور نادرست است.');
+      alert('ارسال اطلاعات ناموفق بود. دوباره تلاش کنید.'); // اضافه کردن alert
     }
   };
 

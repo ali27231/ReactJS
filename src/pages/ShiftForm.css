@@ -1,125 +1,118 @@
-/* استایل کلی صفحه */
-.shift-form-container {
-    max-width: 95%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: "Tahoma", sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 20px;
-    border-radius: 10px;
+/* اضافه کردن فونت وزیری */
+@import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
+
+body {
+    font-family: 'Vazir', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4f46e5, #3b82f6);
+    color: white;
 }
 
-/* استایل فرم */
-.form-box {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+/* فرم اطلاعات پزشک */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-h2 {
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
-}
-
-input {
+form input {
     width: 100%;
     padding: 10px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-button {
-    padding: 10px 15px;
     font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #3b82f6;
+}
+
+form button {
+    background: linear-gradient(to right, #4f46e5, #3b82f6);
     color: white;
-    background-color: #ff7b00;
+    font-size: 16px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: background 0.3s;
 }
 
-button:hover {
-    background-color: #ff5000;
+form button:hover {
+    background: linear-gradient(to right, #3b82f6, #4f46e5);
 }
 
-/* استایل جدول */
-.table-title {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    border-radius: 5px;
-    display: inline-block;
+/* جداول شیفت */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.table-container {
-    width: 100%;
-    overflow-x: auto; 
-    overflow-y: auto; 
-    max-height: 500px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-}
-
-table {
-    width: 100%;
-    max-width: 100%; /* جلوگیری از بیرون‌زدگی جدول */
-    border-collapse: collapse;
-    table-layout: fixed; /* توزیع مساوی ستون‌ها */    
-    width: max-content;
-    min-width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-th {
-    background-color: #004d99;
-    color: white;
-    padding: 10px;
-}
-
-td {
-    border: 1px solid #ccc;
-    padding: 5px;
+.grid div {
+    background: white;
+    color: #1f2937;
+    border-radius: 12px;
+    padding: 15px;
     text-align: center;
-    width: 50px;
-    height: 35px;
-    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-/* استایل ورودی‌های داخل جدول */
-input.availability-input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    text-align: center;
-    font-size: 14px;
-    background: transparent;
+.grid div:hover {
+    transform: scale(1.1);
+}
+
+.grid div h3 {
+    font-size: 16px;
     font-weight: bold;
 }
 
-/* اسکرول زیباتر */
-.table-container::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+.grid div button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.table-container::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+.grid div button:hover {
+    transform: scale(1.05);
 }
 
-.table-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+.grid div button.bg-gray-200 {
+    background: #d1d5db;
+    color: #1f2937;
+}
+
+.grid div button.bg-gray-200:hover {
+    background: #9ca3af;
+}
+
+.grid div button.bg-green-500 {
+    background: #10b981;
+    color: white;
+}
+
+.grid div button.bg-yellow-500 {
+    background: #f59e0b;
+    color: white;
+}
+
+.grid div button.bg-purple-500 {
+    background: #8b5cf6;
+    color: white;
+}
+
+.grid div button.bg-green-500:hover,
+.grid div button.bg-yellow-500:hover,
+.grid div button.bg-purple-500:hover {
+    filter: brightness(1.2);
 }
