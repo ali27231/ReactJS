@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9068e5b-7a45-4daa-b3e7-733c2cceecd5" name="Changes" comment="" />
+    <list default="true" id="b9068e5b-7a45-4daa-b3e7-733c2cceecd5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ShiftForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ShiftForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ShiftTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/styles.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2sGcGXpeAWtF2fjcCm1C2wGaHSb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,13 +34,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.Login.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Projects/hospitals-scheduling",
+    "last_opened_file_path": "D:/Projects/New folder/hospital-scheduling",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -47,6 +65,11 @@
       <option name="presentableId" value="Default" />
       <updated>1738085257316</updated>
       <workItem from="1738085258655" duration="76000" />
+      <workItem from="1738094483249" duration="104000" />
+      <workItem from="1738127224457" duration="694000" />
+      <workItem from="1738145952190" duration="51000" />
+      <workItem from="1738154446763" duration="615000" />
+      <workItem from="1738155779274" duration="37000" />
     </task>
     <servers />
   </component>
